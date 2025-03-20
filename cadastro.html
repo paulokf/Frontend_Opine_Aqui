@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Opine Aqui!</title>
+    <link rel="stylesheet" href="_css/index.css">
+    <link rel="stylesheet" href="_css/cadastro.css">
+</head>
+
+<body>
+    <header>
+        <input type="checkbox" id="chk" />
+        <label for="chk" class="menu-icon">&#9776</label>
+        <div class="bg"></div>
+        <nav class="menu" id="principal">
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="#sistema">OPINE<span>+</span></a></li>   
+                <li><a href="contato.html">CONTATO</a></li>
+            </ul>
+        </nav>
+                <nav class="menu" id="sistema">
+                    <ul>
+                        <li><a href="#" class="voltar">VOLTAR</a></li>
+                        <li><a href="cadastro.html">CADASTRO</a></li>
+                        <li><a href="contato.html">ADMIN</a></li>
+                        
+                    </ul>
+                </nav> 
+        <h1>Opine Aqui!</h1>
+    </header>
+    <form id="corpo">
+        <div class="pacienteclass" id="paciente">
+            <h3>Espaço para opinar</h3>
+            <hr/>
+            <fieldset id="paciente">
+                <legend>Espaço para reclamações e elogios</legend>
+                <p>Data<input name="atendimento" type="date" size="14" placeholder="Data" />
+                    <p>Nome da empresa <input name='text' type='text' size='85' maxlength="120" placeholder="Digite o nome da empresa" />
+                    <p>E-Mail </p><input name='email' type="text" size='25' maxlength="80" placeholder="Opcional">
+                    <p>Número para contato </p><input name='telefone' type='tel' placeholder="número de telefone (Opcional)" />
+                    <p>Avaliação </p><select name="estrelas">
+                    <option value="estrelas">Muito insatisfeito</option>
+                    <option value="estrelas">Insatisfeito</option>
+                    <option value="estrelas">Neutro</option>
+                    <option value="estrelas">Satisfeito</option>
+                    <option value="estrelas">Muito satisfeito</option>
+                    <option value="estrelas">Perfeito</option>   
+                </select></td>
+                    <td>
+                        <p>Tipo de produto ou serviço </p><select name="produto" size 6>
+                            <option value="produto">Produto alimentício</option>
+                            <option value="produto">Produto de limpeza</option>
+                            <option value="produto">Serviço alimentação</option>
+                            <option value="produto">Prestador de serviços</option>
+                            <option value="produto">Eletroportátil</option>
+                            <option value="produto">Bebidas</option>
+                        </select>
+            </fieldset>
+            </table>
+            </td>
+            
+        <div class="insumoclass" id="insumo">
+            <p>
+                <h3 font="Verdana"><strong>Outra forma de avaliar (Estrelas)</strong></h3>
+            </p>
+            <table class="lio">
+                <tr>
+                    <td>Péssimo<input type="checkbox"/></td>
+                    <td>Insatisfeito<input type="checkbox"/></td>
+                    <td>Satisfeito<input type="checkbox" /></td>
+                    <td>Muito Satisfeito<input type="checkbox" /></td>
+                    <td>Perfeito<input type="checkbox" /></td>
+                </tr>
+                
+            </table>
+            <hr/>
+            
+            <p>Outros: </p><input name="outro" type="text" id="outro" size="100" placeholder="qualquer tipo de insumo, prótese, informação, ou instrumento especializado..." />
+        </div>
+        <div id="button">
+            <input type="button" value="cadastrar" id="cadastrar" onclick="cadastrar()">
+        </div>
+        </div>
+    </form>
+</body>
+<footer>@copy Projeto Integrador- Integrador-UNIVESP</footer>
+
+</html>

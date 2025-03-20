@@ -1,0 +1,167 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+body h1 {
+    position: relative;
+    left: 250px;
+    font-family: 'Arial';
+    font-size: 15pt;
+    color: #fff;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+header {
+    width: 100%;
+    height: 60px;
+    top: 0px;
+    left: 0;
+    background-color:#222;
+    position: fixed;
+}
+.menu-icon {
+    position: fixed;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 5px;
+    width: 100px;
+    height: 50px;
+    text-align: center;
+    background-color: #222;
+    color: #fff;
+    cursor: pointer;
+    transition: all .4s;
+    left: -10px;
+    top: 0px;
+}
+.menu-icon:hover {
+    background-color:  #fff;
+    color: #222;
+    top: 0px;
+}
+#chk {
+    display: none;
+}
+#sistema,
+#admin {
+    width: 250px;
+    left: -250px;
+    box-shadow: 2px 2px 5px 2px rgba(0,0,0,.5);
+}
+.menu {
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    background: rgb(29, 29, 29);
+    top: 50px;
+    overflow: hidden;
+    transition: all .4s;
+}
+#principal {
+    width: 250px;
+    left: -350px;
+}
+ul {
+    list-style: none;
+}
+ul li a{
+    display: block;
+    font-size: 14px;
+    font-family: 'Arial';
+    padding: 10px;
+    border-bottom:  solid 1px #000;
+    color: #ccc;
+    text-decoration: none;
+    transition: all .2s;
+}
+ul li span {
+    fLoat: right;
+    padding-right: 10px;
+}
+ul li a:hover {
+    background-color: #222;
+
+}
+.voltar {
+    margin-top: 60px;
+    background-color: #111;
+    border-left: solid 5px #4444;
+}
+
+#chk:checked ~ #principal{
+    transform: translateX(350px);
+    display: block;
+}
+#sistema:target,
+#admin:target {
+    transform: translateX(250px);
+}
+h1 {
+    font-family: 'Arial';
+    font-size: 18pt;
+    text-align: center;
+    padding-bottom: 10px;
+}
+h2 {
+    font-family: 'Arial';
+    font-size: 12pt;
+    background-color:lightblue;
+    padding-bottom: 10px;
+}
+footer {
+    margin: 20px;
+    font-family: 'Arial';
+    font-size: 10pt;
+    justify-content: justify;
+    position: relative;
+}
+section#corpo {
+    display: block;
+    width: 600px;
+    float: left;
+    padding-right: 20px;
+    margin-top: 50px;
+}
+article  {
+    display: block;
+    padding: 20px;
+    margin-left: 250px;
+    font-family: 'Arial';
+    font-size: 12pt;
+    width: 500px;
+    justify-content: justify;
+}
+figure {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border: 8px solid rgba(212, 213, 250, 0.507);
+    padding-left: -100px;
+    margin-top: 20px;
+}
+figure figcaption {
+    opacity: 0;
+    position: absolute;
+    top: 0px;
+    color: white;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(84, 86, 87, 0.418);
+    box-sizing: border-box;
+    transition: all 0.4s;
+    font-family: 'Arial';
+    font-size: 14pt;  
+    text-align: center;
+
+}
+figure:hover figcaption {
+    opacity: 1;
+}
+footer {
+    top: 1200px;
+    display: block;
+    position: relative;
+    color: black;
+    font-family: Arial;
+    text-align: center;
+}

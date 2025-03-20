@@ -1,0 +1,20 @@
+form {
+    display: inline-block;
+    position: relative;
+    top: 80px;
+    left: 250px;
+    font-family: Arial;
+    font-size: 14pt;
+    padding: 10px;
+    margin-left: 20px;
+    background-color: rgb(255, 255, 255);
+    text-align: left;
+}
+form select, p, input {
+    margin: 10px;
+
+}
+input#cEnviar {
+    position: relative;
+    margin-left: 100px;
+}

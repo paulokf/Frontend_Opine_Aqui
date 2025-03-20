@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Opine Aqui!</title>
+    <link rel="stylesheet" href="_css/index.css">
+    <link rel="stylesheet" href="_css/contato.css">
+</head>
+<body> 
+<header>
+     <input type="checkbox" id="chk"/>
+    <label for="chk" class="menu-icon">&#9776</label>
+        <div class="bg"></div>
+        <nav class="menu" id="principal">
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="#sistema">OPINE<span>+</span></a></li>   
+                <li><a href="contato.html">CONTATO</a></li>
+            </ul>
+        </nav>
+                <nav class="menu" id="sistema">
+                    <ul>
+                        <li><a href="#" class="voltar">VOLTAR</a></li>
+                        <li><a href="cadastro.html">CADASTRO</a></li>
+                        <li><a href="exames.html">ADMIN</a></li>
+                        
+                    </ul>
+                </nav> 
+               
+     <h1>Opine Aqui!</h1>
+    </header>
+    <form method="POST" id="fContato" action="mailto:email@email.com" oninput="calc_total();">
+        <fieldset id="usuario"><legend>Identificação do Usuário</legend>
+            <p><label for="cNome">Nome: </label><input type="text" name="tNome" id="cNome" size="20" maxlength="30" placeholder="Nome Completo"/> </p>
+            <p><label for="cMail">E-mail: </label><input type="email" name="tMail" id="cMail" size="20" maxlength="40" placeholder="E-Mail"/></p>
+                    
+        <fieldset id="endereco"><legend>Contato</legend>
+            <p><label for="cRua">Nome da empresa </label><input type="text" name="tRua" id="cRua" size="13" maxlength="80" placeholder="Nome da empresa em questão"/></p>
+            <p><label for="cNum">Telefone: </label><input type="number" name="tnum" id="cNum" min="0" max="99999"/></p>
+            <p><label for="cCid">Reclamação <input type="text" name="tCid" id="cCid" maxlength="500" size="20" placeholder="Comentário" list="cidades"/></label></p>
+        </fieldset>
+
+        <input type="image" name="tEnviar" id="cEnviar" src="_imagem/reclamacao.png"/>
+    </form>
+    <img src="imagem/" />
+</body>
+<footer>@copy Projeto Integrador-UNIVESP</footer>
+</html>
