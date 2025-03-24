@@ -1,0 +1,24 @@
+header {
+    display: flex; /* Habilita flexbox para o header */
+    align-items: center; /* Alinha os itens verticalmente ao centro */
+    justify-content: flex-start; /* Alinha os itens horizontalmente à esquerda */
+}
+body,section {
+    background-image: url("../imagens/logo_grande.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+}
+.logo {
+    height: 50px;
+    width:50px;
+    margin-top: 0px;
+    margin-left: 0px;
+    
+}
+nav a {
+    margin-right: 10px; /* Espaço entre os botões */
+    text-decoration: none; /* Remove sublinhado dos links */
+    color: #333; /* Cor dos links */
+}

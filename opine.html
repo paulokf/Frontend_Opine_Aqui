@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Opine Aqui!</title>
+    <link rel="stylesheet" href="css/styles.css">
+
+</head>
+
+<header>
+    <a href="index.html">
+        <img src="imagens/logo.png" alt="logo" class="logo">
+    </a>
+    <nav>
+    <a href="index.html" class="button">HOME</a>
+    <a href="opine.html" class="button">OPINE</a>
+    <a href="contato.html" class="button">CONTATO</a>
+    <nav>
+</header> 
+<body>
+    <section>
+        <form>
+            <form id="corpo">
+                <div class="pacienteclass" id="paciente">
+                    <h3>Espaço para opinar</h3>
+                    <hr/>
+                    <fieldset id="cadastro">
+                        <legend>Espaço para reclamações e elogios</legend>
+                        <p>Data<input name="atendimento" type="date" size="14" placeholder="Data" />
+                            <p>Nome da empresa <input name='text' type='text' size='85' maxlength="120" placeholder="Digite o nome da empresa" />
+                            <p>E-Mail </p><input name='email' type="text" size='25' maxlength="80" placeholder="Opcional">
+                            <p>Número para contato </p><input name='telefone' type='tel' placeholder="número de telefone (Opcional)" />
+                            <p>Avaliação </p><select name="estrelas">
+                            <option value="estrelas">Muito insatisfeito</option>
+                            <option value="estrelas">Insatisfeito</option>
+                            <option value="estrelas">Neutro</option>
+                            <option value="estrelas">Satisfeito</option>
+                            <option value="estrelas">Muito satisfeito</option>
+                            <option value="estrelas">Perfeito</option>   
+                        </select></td>
+                            <td>
+                                <p>Tipo de produto ou serviço </p><select name="produto" size 6>
+                                    <option value="produto">Produto alimentício</option>
+                                    <option value="produto">Produto de limpeza</option>
+                                    <option value="produto">Serviço alimentação</option>
+                                    <option value="produto">Prestador de serviços</option>
+                                    <option value="produto">Eletroportátil</option>
+                                    <option value="produto">Bebidas</option>
+                                </select>
+                    </fieldset>
+                    </table>
+                    </td>
+                    
+                <div class="classificacao" id="classif1">
+                    <p>
+                        <h3 font="Verdana"><strong>Outra forma de avaliar (Estrelas)</strong></h3>
+                    </p>
+                    <table class="listbox">
+                        <tr>
+                            <td>Péssimo<input type="checkbox"/></td>
+                            <td>Insatisfeito<input type="checkbox"/></td>
+                            <td>Satisfeito<input type="checkbox" /></td>
+                            <td>Muito Satisfeito<input type="checkbox" /></td>
+                            <td>Perfeito<input type="checkbox" /></td>
+                        </tr>
+                        
+                    </table>
+                    <hr/>
+                    
+                    <p>Outros: </p><input name="outro" type="text" id="outro" size="100" placeholder="outro tipo de produto ou serviço não listado acima" />
+                </div>
+                <div id="button">
+                    <input type="button" value="cadastrar" id="cadastrar" onclick="cadastrar()">
+                </div>
+                </div>
+            </form>
+
+        </form>
+    </section>
+</header>    
+<h1 type="text">Opine Aqui</h1>
+<p class="body">Deixe seus comentários para melhoria dos produtos e serviços oferecidos.</p>
+
+    <footer>
+        <p>&copy; <span id="anoAtual"></span> Projeto Integrador - UNIVESP. Todos os direitos reservados.</p>
+    </footer>
+</body>
